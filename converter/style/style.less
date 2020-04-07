@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.converter-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    border: 1px solid lightblue;
+    position: relative;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.converter-values,
+.converter-button{
+    width: 100%;
+    height: 50%;
+}
+.converter-values{
+    display: flex;
+}
+.converter-from,
+.converter-to{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.converter-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__button{
+        width: 200px;
+        height: 30px;
+        border: 1px solid lightblue;
+        border-radius: 5px;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.converter-from__input,
+.converter-to__input,
+.converter-from__select,
+.converter-to__select{
+    display: block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid lightblue;
+
+    &:focus{
+        outline: none;
+    }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.converter-settings{
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;    
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 1px solid lightblue;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.settings-modal-window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: white;
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    &__button{
+        display: block;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid lightblue;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__select{
+        box-sizing: border-box;
+        border: 1px solid lightblue;
+        padding-left: 10px;
+        width: 50%;
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.show-modal-window{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.arabian-direction{
+    direction: rtl;
+}

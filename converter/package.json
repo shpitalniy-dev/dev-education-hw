@@ -1,0 +1,29 @@
+{
+  "name": "08.01.2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --color --progress --mode development",
+    "build-watch": "webpack --color --progress --mode development --watch",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "mocha": "^7.0.0",
+    "requirejs": "^2.3.6",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "devDependencies": {
+    "less-loader": "^5.0.0"
+  }
+}

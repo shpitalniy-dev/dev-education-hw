@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="converter-body">
+            <div class="settings-modal-window" id="modalWindow">
+                    <select size="1" class="settings-modal-window__select" id="language">
+                        <option value="English">English</option>
+                        <option value="Russian">Русский</option>
+                        <option value="Arabian">العربية</option>
+                    </select>
+                <button class="settings-modal-window__button" id="buttonApply">Apply</button>
+            </div>
+            <div class="converter-settings">
+                <button class="converter-settings__button" id="buttonSettings"><img src="../img/settings_icon.svg"></button>
+            </div>
+            <div class="converter-values">
+                <div class = "converter-from">
+                    <input type="number" class="converter-from__input" id="convertValue">
+                    <select size="1" class="converter-from__select" id="convertFrom">
+                        <option value="Versts" id="convertFromVersts">Versts</option>
+                        <option value="Meters" id="convertFromMeters">Meters</option>
+                        <option value="Yards" id="convertFromYards">Yards</option>
+                        <option value="Foots" id="convertFromFoots">Foots</option>
+                    </select>
+                </div>
+                <div class = "converter-to">
+                    <input type="text" class="converter-to__input" id="resultValue" disabled>
+                    <select size="1" class="converter-to__select" id="convertTo">
+                        <option value="Versts" id="convertToVersts">Versts</option>
+                        <option value="Meters" id="convertToMeters">Meters</option>
+                        <option value="Yards" id="convertToYards">Yards</option>
+                        <option value="Foots" id="convertToFoots">Foots</option>
+                    </select>
+                </div>
+            </div>
+            <div class="converter-button">
+                <button class="converter-button__button" id="buttonConvert">Convert</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
