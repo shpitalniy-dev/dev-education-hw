@@ -1,0 +1,34 @@
+@canvas-width: 800px;
+@canvas-height: 500px;
+@settings-width: 200px;
+@settings-background: lightblue;
+@border: 1px;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-body{
+    display: flex;
+    
+    &__settings{
+        width: @settings-width;
+        height: @canvas-height;
+        border: @border solid @settings-background;
+        background-color: @settings-background;
+    }
+
+    &__canvas-conteiner{
+        width: @canvas-width;
+        height: @canvas-height;
+        border: @border solid @settings-background;
+    }
+}
+
