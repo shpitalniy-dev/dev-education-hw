@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class = "paint-body">
+            <div class = "paint-body__canvas-conteiner">
+                <canvas id="canvas" width="500px" height="300px"></canvas>
+            </div>
+            <div class = "paint-body__settings settings">
+                <div class = "settings__menu">
+                    <label>Color: <input id = "color" type = "color"></label>
+                    <label>Background: <input id = "background" type = "color" value = "#ffffff"></label>
+                    <label>Size: <input id="size" type="range" min="1" max="10" step="1" value="1"></label>
+                    <input id="btnClear" type="button" value="Clear">
+                </div>
+                <div class = "settings__position">
+                    <span id="position"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
